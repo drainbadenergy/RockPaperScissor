@@ -1,0 +1,83 @@
+@font-face 
+{
+    src: url(minecraft-font/MinecraftRegular-Bmg3.otf);
+    font-family: minecraft;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes wiggle 
+{
+    from
+    {
+        transform: rotate(0);
+    }    
+    from
+    {
+        transform: rotate(20deg);
+    }
+    to
+    {
+        transform: rotate(-20deg);
+    }
+}
+
+.wiggle
+{
+    animation-name: wiggle;
+    animation: wiggle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.h1
+{
+    animation-name: wiggle;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+body
+{
+    background: url(dark-hexagonal-background-with-gradient-color_79603-1409.jpg);
+    text-align: center;
+}
+h1
+{
+    background: transparent;
+    backdrop-filter: blur(4px);
+    font-family: minecraft;
+    text-align: center;
+    font-size:7em;
+    color:aliceblue;
+    animation: wiggle;
+    border: 4px crimson dotted;
+    display: inline-block;    
+}
+#choice
+{
+    margin-top: 10px;
+    margin-left: 70px;
+    font-size:3em;
+    font-weight: bold;
+    cursor:pointer;
+    color: rgb(168, 168, 168);
+    border-radius: 10px;
+    background:transparent;
+    backdrop-filter: blur(3px);
+    font-family: minecraft;
+    text-align: center;
+    display: inline-block;
+}
+
+#chose
+{
+    text-align: center;
+}
+
+#choice:hover
+{
+    background-color: transparent;
+    box-shadow: 0 0 20px rgb(26, 255, 0);
+    font-size: 3.5em;
+    color:aliceblue;
+
+}

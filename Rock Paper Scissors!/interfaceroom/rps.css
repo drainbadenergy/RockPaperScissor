@@ -1,0 +1,177 @@
+@font-face 
+{
+    src: url(minecraft-font/MinecraftRegular-Bmg3.otf);
+    font-family: minecraft;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes wiggle 
+{
+    from
+    {
+        transform: rotate(0);
+    }    
+    from
+    {
+        transform: rotate(10deg);
+    }
+    to
+    {
+        transform: rotate(-10deg);
+    }
+}
+
+body
+{
+    background-image: url(gradient-neon-light-background_23-2149332915.jpg);
+    font-family: minecraft;
+}
+
+.wiggle
+{
+    animation-name: wiggle;
+    animation: wiggle 1s ease-in-out;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+h1
+{
+    display: flexbox;
+    justify-content: center;
+    color: rgb(225, 255, 0);
+    margin-top: -2px;
+    text-align: center;
+    font-family: minecraft;
+}
+
+.h1
+{
+    animation-name: wiggle;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;
+}
+/*
+.Btn
+{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+
+}
+#button
+{
+
+    margin-top: 10px;
+    margin-left: 90px;
+    font-size:2em;
+    font-weight: bold;
+    cursor:pointer;
+    color: rgb(211, 211, 211);
+    border-radius: 10px;
+    background:transparent;
+    backdrop-filter: blur(3px);
+    font-family: minecraft;
+}
+    
+#button:hover
+{
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 20px rgb(0, 255, 251);
+    font-size: 2.4em;
+    color:rgb(255, 255, 255)
+}
+    */
+
+.button-container 
+{
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align buttons to the left */
+    position: fixed;
+    top: 50%;
+    left: 10%; /* Adjust this value to move the flexbox horizontally */
+    transform: translateY(-50%);
+}
+    
+.game-button
+ {
+    font-family: minecraft;
+    background-color: rgb(248, 185, 248);
+    backdrop-filter: blur(3px);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+    
+.game-button:hover 
+{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color:white;
+}
+
+.userinfo{
+    display:flex;
+    flex-direction: column;
+    color:aliceblue;
+    font-size:1.5em;
+    justify-content:space-around;/* SETS distances betewwen */
+    align-items: center;
+    flex-wrap:nowrap;
+    align-content:flex-start;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.game-container .vs
+{
+    font-size: 4em;
+    color: aliceblue;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #333;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-name {
+    font-size: 2em;
+    margin: 0;
+    color: #ffffff;
+}

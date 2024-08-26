@@ -1,0 +1,88 @@
+
+@font-face 
+{
+    src: url(minecraft-font/MinecraftRegular-Bmg3.otf);
+    font-family: minecraft;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes wiggle 
+{
+    from
+    {
+        transform: rotate(0);
+    }    
+    from
+    {
+        transform: rotate(4deg);
+    }
+    to
+    {
+        transform: rotate(-4deg);
+    }
+}
+
+.wiggle
+{
+    animation-name: wiggle;
+    animation: wiggle 1s ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+
+body{
+    font-family: minecraft;
+    text-align: center;
+    color:white;
+    background: url(dark-hexagonal-background-with-gradient-color_79603-1409.jpg);
+    text-align: center;
+    font-size: 2em;
+    justify-content: center;
+
+}
+
+#label1
+{
+    font-size: 3em;
+    color:springgreen
+}
+
+#myText
+{
+    size:1em;
+    padding: 25px;
+    border-radius: 10px;
+    font-size:0.75em;
+}
+
+#myButton{
+    font-family: minecraft;
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    color:white;
+}
+.myLabels{
+    font-size: 3em;
+}
+
+#Sub
+{
+    
+    font-size:3em;
+    font-weight: bold;
+    cursor:pointer;
+    color: rgb(168, 168, 168);
+    border-radius: 10px;
+    background:transparent;
+    backdrop-filter: blur(5px);
+    font-family: minecraft;
+    text-align: center;
+    display: inline-block;
+    padding:15px
+}
