@@ -9,41 +9,42 @@
 </head>
 <body>
 
-        <h1 class="wiggle">LETS START PLAYING!</h1>
-        
-        <br>
+    <h1 class="wiggle">LETS START PLAYING!</h1>
 
-        <!--HOLDS THE PLAYER NAME AND PFP-->
-
-        <div class="game-container">
-            <div class="player">
-                <img src="wQ1i_5HB_400x400.jpg" alt="User Profile" class="profile-pic">
-                <div class="player-info">
-                    <h3 class="player-name">User</h3>
-                </div>
-            </div>
-            <div class="vs">VS</div>
-            <div class="player">
-                <img src="xE661C3u_400x400.jpg" alt="Opponent Profile" class="profile-pic">
-                <div class="player-info">
-                    <h3 class="player-name">     Opponent</h3>
-                </div>
+    <div class="game-container">
+        <div class="player">
+            <img src="wQ1i_5HB_400x400.jpg" alt="User Profile" class="profile-pic">
+            <div class="player-info">
+                <h3 class="player-name">User</h3>
+                <div id="playerDisplay">PLAYER: </div>
             </div>
         </div>
         
-        <!--HOLDS THE BUTTONS!-->
-        <div class="button-container">
-            <button class="game-button">Rock</button>
-            <br><br>
-            <button class="game-button">Paper</button>
-            <br><br>
-            <button class="game-button">Scissors</button>
+        <div id="choices">
+            <button onclick="playGame('rock')">ROCK</button>
+            <button onclick="playGame('paper')">PAPER</button>
+            <button onclick="playGame('scissors')">SCISSORS</button>
+        </div>
+
+        <div class="player">
+            <img src="xE661C3u_400x400.jpg" alt="Opponent Profile" class="profile-pic">
+            <div class="player-info">
+                <h3 class="player-name">Opponent</h3>
+                <div id="computerDisplay">COMPUTER: </div>
+            </div>
         </div>
         
+        <div id="game-area">
+            <!-- ANIMATIONS OF THE HAND-->
+            <div class="ini-anim"> 
+                <img class="hand-move-user" src="rock(usr).png" id="ini-ani-usrside">
+                <img class="hand-move-opp" src="rock(opp).png" id="ini-ani-oppside">
+            </div>
+        </div>
+    </div>
 
-
-
+    <div id="resultDisplay"></div>
+    
+    <script src="rps.js"></script>
 </body>
 </html>
-
-
