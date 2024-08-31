@@ -206,14 +206,7 @@ h1
 }
 
 
-.ini-anim
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 250px;
-    
-}
+
 #ini-ani-usrside
 {
     width: 25%;
